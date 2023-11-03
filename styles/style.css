@@ -1,0 +1,139 @@
+body{
+  font-family: Helvetica, sans-serif, Arial; 
+  }
+
+h1{
+  font-size: 1.5em;
+}
+
+h2{
+  font-size: 1.1em;
+}
+
+img{
+  max-width: 100%;
+}
+
+main img{    
+  width: 20em;
+  margin-top: 4em;
+  margin-bottom: 6em;
+}
+
+ul{
+  list-style-type: none;
+}
+
+/* vanaf hier voor de navigatiebalk */
+nav{
+  display: flex;
+  background-color: #378537;      
+  align-items: center;
+}
+
+nav img{
+  width: 11em;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+nav ul a{             
+  display: block;            
+  text-decoration: none;      
+  color: black;               
+  background-color: white; /*contrast met achtergrond van nav is 4.59, voldoet*/    
+  font-weight: bold;
+  padding: 13px;
+  text-align: center;
+  border-radius: 3.1em;
+  width: 10em;
+  margin: 0.5em auto;
+}
+
+nav ul a:hover{
+  color: rgb(0, 0, 0);
+  background-color: #d4d4d4;  /*Deze kleuren samen hebben een contrast van 14.16 en met de achtergrond 3.1, dus voldoet*/
+  transition: all 300ms ease;
+  transform: scale(1.1);
+}
+
+.actief{
+  color: white;       
+  background-color: black;
+}
+
+/* Vanaf hier alles voor de main */
+main{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main section:nth-child(2){
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+main section article{
+  max-width: 50%;
+  min-width: 40%;
+  margin: 0 auto;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  width: 13em;
+}
+
+article{
+  padding: 1em;
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+iframe{
+  width: 35em;
+  height: 20em;
+  margin: 4em;
+  border: none;
+}
+
+/* Vanaf hier css alleen van toepassing op contact.html */
+input, textarea{ 
+  font-family: Helvetica, sans-serif, Arial; 
+  width: 100%;
+  height: 2em;
+  padding: 0.5em;
+  margin: 1em;
+  font-size: 1em;
+  background-color: #e7e7e7; 
+  border: 1px solid #8d8e8f;
+  outline-color: rgb(116, 116, 116); 
+  border-radius: 0.4em;
+  }
+
+ input[type=submit]{ /*Hiermee worden alleen de regels html met [type=submit] erin gestyled*/
+  margin-top: 2em;
+  margin-bottom: 7em;
+  width: 20%;
+  background-color: #89be89; /*contrast is 9.79, voldoet*/
+  border: none;
+  border-radius: 0.7em;
+}
+
+input[type=submit]:hover{ 
+  color: white;
+  background-color: #378537; /*contrast is 4.59, voldoet*/
+  transition: all 300ms ease;
+  transform: scale(1.2);
+}
+
+/* Vanaf hier footer */
+footer{
+background-color: rgb(212, 212, 212);
+padding: 0.5em; 
+font-size: 0.9em;
+}
